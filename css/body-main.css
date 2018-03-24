@@ -82,6 +82,7 @@ img{
     }
 
     .item-box{
+        padding-left: 3rem;
         padding-bottom: 1rem;
         border: none;
     }
