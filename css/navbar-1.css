@@ -1,109 +1,97 @@
-/* navbar-1 first navbar of web page */
-
-/* navbar-1 for desktop and above screens */
-
-
-
-@media (min-width: 725px) {
-  
-    .trapezoid-outer {
-        position: relative;
-        background-color: #82001c;
-        height: 2.5rem;
-        width: 90%;
-        margin: 0 auto;
-        -webkit-clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
-        clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
-        display: grid;
-    }
-
-    .left-side-content{
-        margin: 0 auto;
-        padding-top: 0.75rem;
-        letter-spacing: 1px;
-        color:white;
-        font-weight: 500;
-    }
-    
-    .left-side-content span{
-        opacity: 0.7;
-    }
-
-    .trapezoid-inner{
-        position: absolute;
-        display: flex;
-        background-color: #b20127;
-        height: 2.5rem;
-        width: 40%;
-        margin: 0 auto;
-        -webkit-clip-path: polygon(0 0, 96% 0, 100% 100%, 4% 100%);
-        clip-path: polygon(0 0, 96% 0, 100% 100%, 4% 100%);
-    }
-    
-    .right-side-content{
-        color: #f8879f;
-        margin-left: 48%;
-        margin-right: 4%;
-    }
-
-    .right-side-content ul{
-        list-style: none;
-        display:flex;
-    
-    }
-    .right-side-content ul li{
-        margin-right: 2.2rem;
-    }
+.navbar-1-trapezoid{
+    background-color: #82001c;
+    -webkit-clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
+    clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
+    display: flex;
+}
+.navbar-1-inner-trapezoid{
+    padding: 0.5rem;
+    width: 35%;
+    background-color: #b20127;
+    -webkit-clip-path: polygon(0 0, 96% 0, 100% 100%, 4% 100%);
+    clip-path: polygon(0 0, 96% 0, 100% 100%, 4% 100%);
 }
 
-
-@media (max-width: 980px) {
-    .right-side-content{
-
-        margin-left: 40%;
-        margin-right: 2%;
-    }
-  
-    li{
-        margin-right: 1rem;
-    }
-
-    
-}
-/* navbar-1 for tablets and mobile screens */
-@media (min-width: 320px) and (max-width: 724px) {
-  
-    .trapezoid-outer {
-       height: 4.8rem;
-       background-color: #82001c;
-        
-    }
-   
-
-    
-}
-
-.navbar-1-mobile{
+.navbar-1-body{
     position: relative;
 }
-
-.hamburger{
-    color: white;
-    font-size: 2.3rem;
+.navbar-1-content{
+    top: 0.4rem;
+    width: 80%;
+    left: 10%;
     position: absolute;
-    top: 1rem;
-    left: 4rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar-1-menu{
+    list-style: none;
+    padding-left: 0;
+    display: inline-flex;
+    color: #f8879f;
+}
+.navbar-1-menu li{
+    color: #f8879f;
+    font-weight: 600;
+    font-size: 0.5rem;
+    padding:0  1rem;
+    margin-left: 1rem;
+}
+
+.leftside-content{
+    font-weight: 700;
+}
+.rightside-content{
+    opacity: 0.7;
+    margin-left: 2px;
+}
+
+
+
+
+
+.navbar-1-mobile{
+    display: flex;
+    padding: 1rem;
+}
+
+.hamburger-icon{
+}
+.hamburger-icon div{
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 6px 1rem;
+        border-radius: 0.2rem;
 }
 
 .logo-mobile{
-    position: absolute;
-    background-color: white;
-    top: 0.8rem;
-    left: 42%;
-    width: 8rem;
-    padding: 0.5rem 1.3rem;
-    color:#82001c; 
-    font-size: 1.9rem;
+    background-color: #ffffff;
+    padding: 0.5rem 2rem 0.25rem 2rem;
+    color: #82001c;
+    font-size: 2rem;
+    margin: 0 auto;
     border-radius: 0.25rem;
-    font-weight: 800;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    font-weight: 600;
+
+}
+@media (min-width: 930px) {
+
+    .navbar-1{
+        width: 91%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 929px) {
+    .navbar-1{
+        background-color: #82001c;
+        width: 100%;
+    }
+    
 }
