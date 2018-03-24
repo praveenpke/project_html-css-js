@@ -1,0 +1,109 @@
+/* navbar-1 first navbar of web page */
+
+/* navbar-1 for desktop and above screens */
+
+
+
+@media (min-width: 725px) {
+  
+    .trapezoid-outer {
+        position: relative;
+        background-color: #82001c;
+        height: 2.5rem;
+        width: 90%;
+        margin: 0 auto;
+        -webkit-clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
+        clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
+        display: grid;
+    }
+
+    .left-side-content{
+        margin: 0 auto;
+        padding-top: 0.75rem;
+        letter-spacing: 1px;
+        color:white;
+        font-weight: 500;
+    }
+    
+    .left-side-content span{
+        opacity: 0.7;
+    }
+
+    .trapezoid-inner{
+        position: absolute;
+        display: flex;
+        background-color: #b20127;
+        height: 2.5rem;
+        width: 40%;
+        margin: 0 auto;
+        -webkit-clip-path: polygon(0 0, 96% 0, 100% 100%, 4% 100%);
+        clip-path: polygon(0 0, 96% 0, 100% 100%, 4% 100%);
+    }
+    
+    .right-side-content{
+        color: #f8879f;
+        margin-left: 48%;
+        margin-right: 4%;
+    }
+
+    ul{
+        list-style: none;
+        display:flex;
+    
+    }
+    li{
+        margin-right: 2.2rem;
+    }
+}
+
+
+@media (max-width: 980px) {
+    .right-side-content{
+
+        margin-left: 40%;
+        margin-right: 2%;
+    }
+  
+    li{
+        margin-right: 1rem;
+    }
+
+    
+}
+/* navbar-1 for tablets and mobile screens */
+@media (min-width: 320px) and (max-width: 724px) {
+  
+    .trapezoid-outer {
+       height: 4.8rem;
+       background-color: #82001c;
+        
+    }
+   
+
+    
+}
+
+.navbar-1-mobile{
+    position: relative;
+}
+
+.hamburger{
+    color: white;
+    font-size: 2.3rem;
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+}
+
+.logo-mobile{
+    position: absolute;
+    background-color: white;
+    top: 0.8rem;
+    left: 42%;
+    width: 6rem;
+    padding: 0.5rem 1.3rem;
+    color:#82001c; 
+    font-size: 1.9rem;
+    border-radius: 0.25rem;
+    font-weight: 800;
+}

@@ -1,0 +1,81 @@
+
+
+/* navbar-2 first navbar of web page */
+
+/* navbar-2 for desktop and above screens */
+@media (min-width: 725px) {
+  
+    .navbar-2{
+        margin: 1rem auto;
+    }
+    .navbar-2-menu{
+      
+       width: 80%;
+       margin: 0 auto;
+       display: flex;
+       justify-content: space-between;
+    }
+    .logo{
+        text-align: center;
+        color: white;
+        padding: 1rem 2rem 0.25rem 2rem;
+        background-color:#82001c; 
+        font-size: 2rem;
+        border-radius: 0.25rem;
+    }
+    .navbar-2-menu-item{
+        color: #b20127;
+        line-height: 1rem;
+        padding: 1rem 2rem 0.25rem 2rem;
+    }
+    .navbar-2-menu-item div{
+        color: #82001c;
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    .right-align{
+        line-height:1.2rem; 
+        text-align: right;
+    }
+    .for-mobile{
+        display: none;
+    }
+  
+}
+
+
+/* navbar-2 for tablets and mobile screens */
+@media (min-width: 320px) and (max-width: 724px) {
+  
+    .navbar-2{
+        background-color: #b20127;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .logo-desktop{
+        display: none;
+    }
+    .phone-number{
+        display: none;
+    }
+
+    .navbar-2-menu{
+        padding: 0.5rem;
+      color: rgba(255,255,255,0.8);
+       font-size:0.5rem;
+        width: 80%;
+        margin: 1rem auto;
+        display: flex;
+        justify-content: space-between;
+     }
+
+     .navbar-2-menu-item div{
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+    .for-desktop{
+        display: none;
+    }
+}

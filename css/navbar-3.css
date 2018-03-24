@@ -1,0 +1,33 @@
+.navbar-3{
+    background-color: #ffdd00;
+    padding: 0.5rem;
+}
+
+.navbar-3-content{
+    color:   #464646;
+    width: 80%;
+    margin: 0 auto;
+ 
+}
+
+/* navbar-2 first navbar of web page */
+
+/* navbar-2 for desktop and above screens */
+@media (min-width: 725px) {
+  
+
+  
+}
+
+
+@media (max-width: 980px) {
+  
+
+    
+}
+/* navbar-2 for tablets and mobile screens */
+@media (min-width: 320px) and (max-width: 724px) {
+  
+
+    
+}
