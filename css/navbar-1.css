@@ -40,6 +40,14 @@
     margin-left: 1rem;
 }
 
+
+.navbar-1-menu li:hover{
+    color: white;
+    background-color: #b20127;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
 .leftside-content{
     font-weight: 700;
 }

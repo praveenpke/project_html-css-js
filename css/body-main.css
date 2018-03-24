@@ -44,7 +44,15 @@ img{
     padding-left: 0;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     width: 70%;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
+.filters-menu li:hover{
+    transform: scale(1.1);
+    font-weight: 600;
+    color: #82001c; 
+}
+
 
 .filters-menu li:last-child{
     border-bottom: none;

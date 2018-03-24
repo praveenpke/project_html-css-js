@@ -13,11 +13,19 @@
     font-size: 2rem;
     border-radius: 0.25rem;
     letter-spacing: 0.1rem;
+    cursor: pointer;
 }
 .navbar-2-item{
     padding-top: 0.5rem;
     color: #82001c; 
     line-height: 1rem;
+    transition: all 0.5s ease;
+}
+
+.navbar-2-item:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+
 }
 .navbar-2-item p{
     font-size: 1.5rem;
