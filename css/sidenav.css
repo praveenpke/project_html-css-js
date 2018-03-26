@@ -1,0 +1,38 @@
+.sidenav_bar {
+    background-color: #82001c;
+    height: 100vh;
+    width: 50vw;
+    position: fixed;
+    z-index: 10;
+    display: none;
+    -webkit-box-shadow: 10px -1px 5px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px -1px 5px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px -1px 5px -5px rgba(0, 0, 0, 0.75);
+}
+
+#close-icon {
+    color: white;
+    text-align: right;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.sidebar-menu {
+    list-style: none;
+    color: white;
+    font-size: 2rem;
+    margin-top: 4rem;
+    padding-left: 0rem;
+}
+
+.sidebar-menu li {
+    transition: all 0.5s ease;
+    cursor: pointer;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.sidebar-menu li:hover {
+    background-color: bisque;
+    color: black;
+}

@@ -1,0 +1,63 @@
+
+.navbar-2-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.navbar-2-logo{
+    text-align: center;
+    color: white;
+    padding: 0.5rem 2rem 0.25rem 2rem;
+    background-color:#82001c; 
+    font-size: 2rem;
+    border-radius: 0.25rem;
+    letter-spacing: 0.1rem;
+}
+.navbar-2-item{
+    padding-top: 0.5rem;
+    color: #82001c; 
+    line-height: 1rem;
+}
+.navbar-2-item p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.right-align{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 930px) {
+    .navbar-2{
+        margin: 0 auto;
+    }
+    
+  
+    
+}
+
+@media (min-width: 320px) and (max-width: 929px) {
+   
+    .navbar-2{
+        background-color: #b20127;
+        width: 100%;
+    }
+    
+    .navbar-2-content{
+        margin: 0 2rem;
+    }
+    .navbar-2-item{
+        color: white;
+        font-size: 0.1rem !important;
+    }
+  
+}
