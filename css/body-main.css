@@ -1,31 +1,10 @@
 .body-main{
-    margin-top: 1rem;
+    margin-top: 2rem;
     
 }
 
 
-
-.item-grid{
-    /* border-bottom: 1px solid rgba(100, 100, 100, 0.8); */
-    
-}
-.item-box{
-    border: 0.5px solid rgba(100, 100, 100, 0.5);
-    border-bottom: none;
-}
-
-img{
-    padding: 1.2rem;
-    max-width: 100%;
-    height: auto;
-}
-
-.product-description{
-    color: #646464;
-    font-weight: 700;
-    padding-bottom: 1rem;
-}
-
+/* filters styling */
 .filters-heading{
     color: #646464;
     font-size: 1.1rem;
@@ -38,19 +17,21 @@ img{
     margin-top: 2rem;
 }
 .filters-menu li{
-    font-size: 1rem;
     color: rgba(100, 100, 100, 0.8);
     padding: 0.5rem;
     padding-left: 0;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     width: 70%;
-    transition: all 0.5s ease;
+    -webkit-transition: -webkit-all 0.1s ease-in-out;
+    -moz-transition:    -moz-all 0.1s ease-in-out;
+     -ms-transition:     -ms-all 0.1s ease-in-out;
+      -o-transition:      -o-all 0.1s ease-in-out;
+         transition:         all 0.1s ease-in-out;
     cursor: pointer;
 }
-.filters-menu li:hover{
-    transform: scale(1.1);
+.filters-menu li:hover,li:active{
     font-weight: 600;
-    color: #82001c; 
+    color: rgba(100, 100, 100, 0.8);
 }
 
 
@@ -58,32 +39,136 @@ img{
     border-bottom: none;
 }
 
-.active{
+.active-item{
     padding-right: 0 !important;
     display: flex;
     justify-content: space-between;
-    font-weight: 700;
 }
 
-@media (min-width: 930px) {
+
+
+
+
+/* item-grid styling */
+.item-grid .row{ 
+    margin: 0 auto;
+    border-left: 0.5px solid rgba(100, 100, 100, 0.5);
+ }
+
+ .border-specially-added{
+    border-top: 0.5px solid rgba(100, 100, 100, 0.5);
+ }
+
+
+.item-box{
+    position: relative;
+    border-right: 0.5px solid rgba(100, 100, 100, 0.5);
+    border-bottom: 0.5px solid rgba(100, 100, 100, 0.5);
+    -webkit-transition: -webkit-all 0.25s ease-in-out;
+   -moz-transition:    -moz-all 0.25s ease-in-out;
+    -ms-transition:     -ms-all 0.25s ease-in-out;
+     -o-transition:      -o-all 0.25s ease-in-out;
+        transition:         all 0.25s ease-in-out;
+    padding-bottom: 3rem;
+}
+
+.item-box:hover{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+img{
+    padding: 1.2rem;
+    max-width: 100%;
+    height: auto;
+    margin-top: 2px;
+    padding-bottom: 1.8rem;
+}
+
+.product-description{
+    text-align: center;
+    height: 2.8rem;
+    width: 100%;
+    left: 0.1rem;
+    bottom: 0;
+    position: absolute;
+    color: #646464;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* media queries for body-content grid*/
+
+@media (min-width: 1024px) {
     .body-content{
         display: grid;
         grid-template-columns: 25% 75%;
     }
 }
 
-@media (min-width: 320px) and (max-width: 929px) {
+@media (max-width: 1023px) {
     .body-content{
         display: block;
     }
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* media queries for item-grid  making responsive for all desktop screens */
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+    .product-description{
+        font-size: 0.9rem;
+        padding: 0 0.25rem;
+    }
+    .filters-menu li{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1801px) {
+    .product-description{
+        height: 3.5rem;
+        font-size: 1.1rem;
+        padding: 0 0.5rem;
+    }
+    .filters-menu li{
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+/* media queries for mobile screens dividing into two categories screens more than 320px and less than 320px */
+
+@media (max-width: 319px) {
+    .item-box{
+        border: none;
+    }
+    .item-grid .row{
+        border: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+
+    img{
+        padding: 3rem;
+    }
+    .item-box{
+        border: none;
+    }
+    .item-grid .row{
+        border: none;
+    }
+   
 
     .product-description{
-        font-size: 2rem;
-    }
-
-    .item-box{
-        padding-left: 3rem;
-        padding-bottom: 1rem;
-        border: none;
+        height: 5rem;
+        font-size: 1.5rem;
     }
 }

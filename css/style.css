@@ -4,35 +4,36 @@
 @import url("./heading-main.css");
 @import url("./body-main.css");
 @import url("./sidenav.css");
-
-html,body{
+html,
+body {
     margin: 0;
-    font-size: 62.5%;
 }
 
-
-
-@media (min-width: 930px) {
-    .for-mobile{
+@media (min-width: 1024px) {
+    .for-mobile {
         display: none;
     }
-
-    .box{
+    .box {
         z-index: 1;
         width: 73%;
         margin: 0 auto;
-      
+    }
+    body{
+        overflow-x: hidden;
     }
 }
 
-@media (min-width: 320px) and (max-width: 929px) {
-   .for-desktop{
+@media (max-width: 1023px) {
+    .for-desktop {
         display: none;
-   }
-   .box{
-    
-    width: 100%;
-    
-}
-
+    }
+    .box {
+        width: 95%;
+        margin: 0 auto;
+    }
+    html,
+    body {
+        margin: 0;
+        font-size: 62.5%;
+    }
 }

@@ -26,7 +26,11 @@
 }
 
 .sidebar-menu li {
-    transition: all 0.5s ease;
+    -webkit-transition: -webkit-all 0.5s ease;
+    -moz-transition:    -moz-all 0.5s ease;
+     -ms-transition:     -ms-all 0.5s ease;
+      -o-transition:      -o-all 0.5s ease;
+         transition:         all 0.5s ease;
     cursor: pointer;
     padding-bottom: 2rem;
     padding-left: 1rem;

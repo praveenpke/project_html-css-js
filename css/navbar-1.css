@@ -1,21 +1,22 @@
-.navbar-1-trapezoid{
+.navbar-1-trapezoid {
     background-color: #82001c;
     -webkit-clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
     clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
     display: flex;
 }
-.navbar-1-inner-trapezoid{
-    padding: 0.5rem;
+
+.navbar-1-inner-trapezoid {
     width: 35%;
     background-color: #b20127;
     -webkit-clip-path: polygon(0 0, 96% 0, 100% 100%, 4% 100%);
     clip-path: polygon(0 0, 96% 0, 100% 100%, 4% 100%);
 }
 
-.navbar-1-body{
+.navbar-1-body {
     position: relative;
 }
-.navbar-1-content{
+
+.navbar-1-content {
     top: 0.4rem;
     width: 80%;
     left: 10%;
@@ -25,82 +26,167 @@
     justify-content: space-between;
 }
 
-
-.navbar-1-menu{
+.navbar-1-menu {
     list-style: none;
     padding-left: 0;
     display: inline-flex;
     color: #f8879f;
 }
-.navbar-1-menu li{
+
+.navbar-1-menu li {
     color: #f8879f;
     font-weight: 600;
-    font-size: 0.5rem;
-    padding:0  1rem;
+    padding: 0 0.4rem;
     margin-left: 1rem;
 }
 
-
-.navbar-1-menu li:hover{
+.navbar-1-menu li:hover {
     color: white;
     background-color: #b20127;
     cursor: pointer;
     border-radius: 2px;
 }
 
-.leftside-content{
+.leftside-content {
     font-weight: 700;
 }
-.rightside-content{
+
+.rightside-content {
     opacity: 0.7;
     margin-left: 2px;
 }
 
-
-
-
-
-.navbar-1-mobile{
+.navbar-1-mobile {
     display: flex;
     padding: 1rem;
 }
 
-.hamburger-icon{
+.hamburger-icon {
     cursor: pointer;
 }
-.hamburger-icon div{
-        width: 30px;
-        height: 4px;
-        background-color: white;
-        margin: 6px 1rem;
-        border-radius: 0.2rem;
+
+.hamburger-icon div {
+    background-color: white;
 }
 
-.logo-mobile{
+.logo-mobile {
     background-color: #ffffff;
-    padding: 0.5rem 2rem 0.25rem 2rem;
     color: #82001c;
-    font-size: 2rem;
     margin: 0 auto;
     border-radius: 0.25rem;
     letter-spacing: 0.1rem;
     text-align: center;
     font-weight: 600;
-
 }
-@media (min-width: 930px) {
 
-    .navbar-1{
+
+
+/* ---------------------------------------------------------------------------------- ----------*/
+/* Media query to adjust navbar-1 width for desktop and mobile */
+
+@media (min-width: 1024px) {
+    .navbar-1 {
         width: 91%;
         margin: 0 auto;
     }
-
 }
 
-@media (min-width: 320px) and (max-width: 929px) {
-    .navbar-1{
+@media (max-width: 1023px) {
+    .navbar-1 {
         background-color: #82001c;
         width: 100%;
     }
-    
+
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* media queries for Navbar-1 text content making responsive for all desktop screens */
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .navbar-1 {
+        width: 96%;
+    }
+    .navbar-1-content {
+        font-size: 0.65rem;
+    }
+    .navbar-1-menu li {
+        font-size: 0.65rem;
+    }
+    .navbar-1-inner-trapezoid {
+        padding: 0.15rem;
+    }
+}
+@media (min-width: 1280px) and (max-width: 1500px) {
+    .navbar-1-content {
+        font-size: 0.8rem;
+    }
+    .navbar-1-menu li {
+        font-size: 0.8rem;
+    }
+    .navbar-1-inner-trapezoid {
+        padding: 0.2rem;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1800px) {
+    .navbar-1-content {
+        font-size: 0.9rem;
+    }
+    .navbar-1-menu li {
+        font-size: 0.9rem;
+    }
+    .navbar-1-inner-trapezoid {
+        padding: 0.3rem;
+    }
+}
+
+@media (min-width: 1801px) {
+    .navbar-1-content {
+        font-size: 1.2rem;
+    }
+    .navbar-1-menu li {
+        font-size: 1.2rem;
+    }
+    .navbar-1-inner-trapezoid {
+        padding: 0.6rem;
+    }
+}
+
+
+
+
+/* media queries for mobile screens dividing into two categories screens more than 320px and less than 320px */
+
+@media (max-width: 319px) {
+
+    .logo-mobile {
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 0.25rem 1rem 0.25rem 1rem;
+        
+    }
+    .hamburger-icon div {
+        width: 2rem;
+        height: 2px;
+        background-color: white;
+        margin: 3px 0.5rem;
+        border-radius: 0.2rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+
+    .logo-mobile {
+        cursor: pointer;
+        font-size: 2rem;
+        padding: 0.5rem 2rem 0.25rem 2rem;
+    }
+    .hamburger-icon div {
+        width: 3rem;
+        height: 4px;
+        margin: 6px 1rem;
+        border-radius: 0.2rem;
+    }
 }

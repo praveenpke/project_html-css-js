@@ -1,72 +1,186 @@
 
-.navbar-2-content{
+.navbar-2-content {
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 1rem;
-
 }
-.navbar-2-logo{
+
+.navbar-2-logo {
+    padding: 0.5rem 2rem 0.5rem 2rem;
     text-align: center;
     color: white;
-    padding: 0.5rem 2rem 0.25rem 2rem;
-    background-color:#82001c; 
-    font-size: 2rem;
+    background-color: #82001c;
     border-radius: 0.25rem;
     letter-spacing: 0.1rem;
     cursor: pointer;
 }
-.navbar-2-item{
-    padding-top: 0.5rem;
-    color: #82001c; 
-    line-height: 1rem;
-    transition: all 0.5s ease;
-}
 
-.navbar-2-item:hover{
+.navbar-2-item {
     cursor: pointer;
-    transform: scale(1.1);
-
+    padding-top: 0.5rem;
+    color: #82001c;
+    line-height: 1rem;
+    -webkit-transition: -webkit-all 0.25s ease-in-out;
+   -moz-transition:    -moz-all 0.25s ease-in-out;
+    -ms-transition:     -ms-all 0.25s ease-in-out;
+     -o-transition:      -o-all 0.25s ease-in-out;
+        transition:         all 0.25s ease-in-out;
 }
-.navbar-2-item p{
-    font-size: 1.5rem;
-    font-weight: 700;
-}
 
-.right-align{
+
+
+
+.right-align {
     text-align: right;
 }
-
-
-
-
-
-
-
-
-
-@media (min-width: 930px) {
-    .navbar-2{
-        margin: 0 auto;
-    }
-    
-  
-    
+.right-align:hover{
+    background-color: white;
+    color: #82001c;
+    border-radius: none;
+    cursor: default;
 }
 
-@media (min-width: 320px) and (max-width: 929px) {
-   
-    .navbar-2{
+@media (min-width: 1024px) {
+    .navbar-2 {
+        margin: 0 auto;
+    }
+    .navbar-2-item:hover{
+        cursor: pointer;
+        color: #000;
+    }
+}
+
+@media (max-width: 1023px) {
+    .navbar-2 {
         background-color: #b20127;
         width: 100%;
     }
-    
-    .navbar-2-content{
+    .navbar-2-content {
         margin: 0 2rem;
     }
-    .navbar-2-item{
+    .navbar-2-item {
         color: white;
         font-size: 0.1rem !important;
+        padding: 1rem 2rem 1rem 2rem;
+        border-radius: 5px;
     }
-  
+    .navbar-2-item:hover{
+        background-color: #82001c;
+        cursor: pointer;
+        color:white;
+    }
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* media queries for Navbar-1 text content making responsive for all desktop screens */
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+    .navbar-2-logo {
+        font-size: 1.3rem;
+    }
+    .navbar-2-item {
+        font-size: 0.75rem;
+    }
+    .navbar-2-item div {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    .navbar-2-item {
+        line-height: 0.7rem;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1800px) {
+    .navbar-2-logo {
+        font-size: 2rem;
+    }
+    .navbar-2-item {
+        font-size: 0.75rem;
+    }
+    .navbar-2-item div {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .navbar-2-item {
+        line-height: 0.7rem;
+    }
+}
+
+@media (min-width: 1801px) {
+    .navbar-2-logo {
+        font-size: 2.3rem;
+    }
+    .navbar-2-item {
+        font-size: 0.8rem;
+    }
+    .navbar-2-item div {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    .navbar-2-item {
+        line-height: 0.7rem;
+    }
+}
+
+/* media queries for mobile screens dividing into two categories screens more than 320px and less than 320px */
+
+@media (max-width: 319px) {
+   .navbar-2-content{
+       display: flex;
+       flex-wrap: wrap;
+   }
+   
+}
+
+
+
+@media (max-width: 414px) {
+    .navbar-2-item {
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        font-size: 9px !important;
+    }
+    .navbar-2-item div {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    .navbar-2-item {
+        line-height: 0.6rem;
+    }
+    .navbar-2-content{
+        margin:0 1rem !important;
+    }
+   
+}
+
+@media (min-width: 415px) and (max-width: 500px) {
+    .navbar-2-item {
+        font-size: 1.1rem !important;
+    }
+    .navbar-2-item div {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .navbar-2-item {
+        line-height: 0.9rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1023px) {
+    .navbar-2-item {
+        font-size: 1.2rem !important;
+    }
+    .navbar-2-item div {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    .navbar-2-item {
+        line-height: 0.9rem;
+    }
 }
